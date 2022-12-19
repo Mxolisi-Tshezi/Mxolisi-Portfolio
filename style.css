@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Style the navigation menu */
+.navbar {
+    /* width: 70%; */
+    /* background-color: #555; */
+    overflow: auto;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 23.2%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    background-color: grey;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    background-color: hwb(347 4% 19%);
+}
+
+button {
+    /* Green */
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* text-decoration: none; */
+    width: 13em;
+    font-size: 15px;
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+button:hover {
+    background-color:  grey;
+    /* Green */
+}
+
+.picture {
+    /* background-color: bisque; */
+    width: 40em;
+    height: 40em;
+    position: absolute;
+    margin-left: 40em;
+    margin-top: 0em;
+}
+
+.aboutpicture {
+    background-color: bisque;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+
+}
+
+.aboutMeheader {
+
+    background-color: blue;
+}
+.Education{
+    background-color: blueviolet;
+}
+
+.skills {
+    background-color: red;
+
+}
+
+.text {
+    /* background-color: #4CAF50; */
+    /* width: 20em;
+    height: 20em; */
+    position: absolute;
+    margin-top: 6em;
+    margin-left: 10em;
+    color: aliceblue;
+
+
+
+}
+
+hr {
+    margin-bottom: 5em;
+}
+
+.buttoms {
+    /* background-color: bisque; */
+    margin-left: 10em;
+    margin-top: 20em;
+    position: absolute;
+}
+
+.name {
+    color: hwb(347 4% 19%);
+}
+
+.footer {
+    background-color: hwb(347 4% 19%);
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        /* If you want the text to be left-aligned on small screens */
+    }
+}
