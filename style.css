@@ -4,6 +4,7 @@ body {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    color: aliceblue;
 }
 
 /* Style the navigation menu */
@@ -63,27 +64,6 @@ button:hover {
     margin-top: 0em;
 }
 
-.aboutpicture {
-    background-color: bisque;
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-
-}
-
-.aboutMeheader {
-
-    background-color: blue;
-}
-.Education{
-    background-color: blueviolet;
-}
-
-.skills {
-    background-color: red;
-
-}
-
 .text {
     /* background-color: #4CAF50; */
     /* width: 20em;
@@ -114,6 +94,52 @@ hr {
 
 .footer {
     background-color: hwb(347 4% 19%);
+}
+
+/* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE *//* ABOUT PAGE */
+.aboutMetext{
+    /* background-color: aliceblue; */
+    width: 10em;
+    margin: auto;}
+
+
+    .aboutpicture {
+        background-color:hwb(347 4% 19%);
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        float: left;
+    
+    }
+    .paragraph{
+        padding-left: 12em;
+    }
+    .aboutMeheader {
+        /* background-color: blue; */
+        width: 40em;
+        height: 12em;
+    margin: auto;}
+
+    .skills {
+        background-color: red;
+        height: 10em;
+        display: inline-block;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .Education{
+        background-color: blueviolet;
+        /* width: 10em; */
+        text-align: center;
+        height: 10em;
+    }
+    .interests {
+        background-color: green;
+        height: 10em;
+    }
+.skills-icons{
+    width: 5em;
+    height: 5em;
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
