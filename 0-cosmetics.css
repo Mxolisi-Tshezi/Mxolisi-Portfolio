@@ -1,0 +1,83 @@
+/* (A) SHARED */
+* {
+    /* background-color: grey; */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* background-color: rgb(16, 15, 15); */
+    background-image: url("florian.jpg");
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+
+  }
+  #notify, #cform { max-width: 400px; }
+  
+  /* (B) NOTIFICATION */
+  #notify {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffc8c8;
+    background: #ffe9e9;
+  }
+  
+  /* (C) FORM */
+  #cform {
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    background:hwb(347 4% 19%);;
+  }
+  #cform label, #cform input, #cform textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+  }
+  #cform label { margin: 10px 0; }
+  #cform label:first-child { margin-top: 0; }
+  #cform input, #cform textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid hwb(347 4% 19%);
+  }
+  .g-recaptcha { margin: 20px 0; }
+  #cform input[type=submit] {
+    border: 0;
+    color: #fff;
+    background: #3f44e1;
+    cursor: pointer;
+  }
+  /* Style the navigation menu */
+.navbar {
+    /* width: 70%; */
+    /* background-color: #555; */
+    overflow: auto;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 23.2%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    background-color: grey;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    background-color: hwb(347 4% 19%);
+}
+form{
+    margin: auto;
+}
+h1{
+text-align: center;
+color: black;}

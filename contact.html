@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="0-cosmetics.css">
+
+
+  <!-- (A) GOOGLE RECAPTCHA API -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a class="active" href="contact.html">Contact Me</a>
-    </div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact Me</a>
+</div>
+<br>
+<div><h1>Contact Me</h1></div>
+<br>
+  <!-- (B) PROCESS + NOTIFICATIONS -->
+  <!-- <?php
+    if (isset($_POST["name"])) {
+      require "3-process.php";
+      echo $error == ""
+        ? "<div id='notify'>OK</div>"
+        : "<div id='notify'>$error</div>";
+    }
+    ?> -->
+
+  <!-- (C) CONTACT FORM -->
+  <form id="cform" method="post">
+    <label>Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Message</label>
+    <textarea name="message" required></textarea>
+
+    <!-- (D) CAPTCHA - CHANGE SITE KEY! -->
+    <div class="g-recaptcha" data-sitekey="6LfxiZkjAAAAAO6ODkuI7ipKcL4sC3Q4D0m_SkoI
+"></div>
+
+    <input type="submit" value="Submit">
+  </form>
 </body>
 
 </html>
