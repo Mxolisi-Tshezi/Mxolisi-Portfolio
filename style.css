@@ -10,9 +10,14 @@ body {
 /* Style the navigation menu */
 .navbar {
     /* width: 70%; */
-    /* background-color: #555; */
     overflow: auto;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /* background-color: #3498db; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 /* Navigation links */
@@ -115,7 +120,7 @@ hr {
 
 .paragraph {
     padding-left: 12em;
-text-align: justify;
+    text-align: justify;
 }
 
 .aboutMeheader {
@@ -124,6 +129,7 @@ text-align: justify;
     height: 12em;
     margin: auto;
 }
+
 .skills {
     /* background-color: rgb(34, 33, 33); */
     /* height: 10em; */
@@ -138,12 +144,14 @@ text-align: justify;
 
 
 }
+
 .Education {
     /* background-color: blueviolet; */
     /* width: 10em; */
     text-align: center;
     height: 12em;
 }
+
 .interests {
     /* background-color: green; */
     height: 10em;
@@ -158,71 +166,190 @@ text-align: justify;
     /* color: aliceblue; */
     margin: auto;
     border-radius: 60%;
-padding: 0.1em;
+    padding: 0.1em;
 }
+
 /* figure{
     display: inline-block;
 } */
-ul{
+ul {
     display: inline-block;
 }
-h2{
+
+h2 {
     margin: 0;
 }
-.line{
 
+@keyframes name-animation {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .name-animation {
+    animation: name-animation 2s ease-in-out;
+  }
+
+  @keyframes name-animation2 {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .name-animation2 {
+    animation: name-animation2 2s ease-in-out;
+  }
+
+.line {
     width: 25em;
     height: 3px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px whitesmoke;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+@keyframes hello {
+    0% {
+      font-size: 20px;
+    }
+    50% {
+      font-size: 30px;
+    }
+    100% {
+      font-size: 20px;
+    }
   }
   
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: hwb(347 4% 19%);;
+  .hello {
+    animation: hello 2s ease-in-out;
+  }
+
+  .buttoms a{
+    background-color:  hwb(347 4% 19%);
+  }
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: hwb(347 4% 19%);
+    ;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-margin-top: 2em;
-margin-left: 20em;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color:  hwb(347 13% 36%);
-  }
-  
-  /* Add a background color and some padding around the form */
-  .contact-container {
+    margin-top: 2em;
+    margin-left: 20em;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: hwb(347 13% 36%);
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
     border-radius: 5px;
     background-color: hwb(347 4% 19%);
     padding: 30px;
     width: 40em;
     height: 30em;
     margin: auto;
-margin-top: 3em;
-  }
+    margin-top: 3em;
+}
 
+.project-card {
+    /* margin: auto; */
+    margin-left: 0.8em;
+    padding: 10px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 520px;
+    background-color: hwb(348 24% 72%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h2 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.project-card p {
+    margin: 0 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.view-project-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hwb(347 4% 19%);
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+header{
+    width: 10em;
+    margin: auto;
+}
+
+.view-project-button:hover {
+    background-color: #2980b9;
+}
+
+.footer{
+margin: auto;
+}
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
     .navbar a {
         float: none;
-        display: block;
+        /* display: block; */
         width: 100%;
         text-align: left;
         /* If you want the text to be left-aligned on small screens */
